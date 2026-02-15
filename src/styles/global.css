@@ -1,0 +1,57 @@
+/* ================= RESET ================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #111;
+  overflow-x: hidden;
+}
+
+/* ================= VARIABLES ================= */
+
+:root {
+  --gold: #d6b36a;
+  --dark: #0e0f14;
+  --light: #fafafa;
+  --muted: #9ca0a8;
+  --container: 1400px;
+}
+
+/* ================= UTILITIES ================= */
+
+.container-wide {
+  width: min(var(--container), calc(100% - 80px));
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}

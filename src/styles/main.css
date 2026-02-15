@@ -1,0 +1,176 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.btn-primary {
+  background: #d2a75a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  padding: 20px 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+  min-height: 100vh;
+  background: url("/images/hero-bg.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* LEFT TEXT */
+
+.hero-tag {
+  display: inline-block;
+  color: #d2a75a;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  max-width: 450px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+/* RIGHT CARD */
+
+.hero-card {
+  background: rgba(255,255,255,0.08);
+  padding: 35px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.hero-card h2 {
+  font-size: 48px;
+  color: #d2a75a;
+}
+
+.card-title {
+  margin: 15px 0;
+}
+
+.hero-card ul {
+  list-style: none;
+}
+
+.hero-card li {
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+}

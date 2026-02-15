@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+import "../styles/layout.css";
+import "../styles/animations.css";
+
+const { title = "Antra Clone" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{title}</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <slot />
+
+  <script src="/scripts/main.js" is:inline></script>
+
+
+
+</body>
+</html>
