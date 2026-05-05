@@ -6,7 +6,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <!-- ================= HERO ================= -->
 
-<section class="hero">
+<section class="hero" id="home">
 
   <!-- Header -->
 
@@ -17,12 +17,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
 
     <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">Pages</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact Us</a>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="/pricing">Pricing</a>
+      <a href="#blog">Blog</a>
+      <a href="/contact.astro">Contact Us</a>
     </nav>
 
     <div class="header-right">
@@ -32,7 +32,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <strong>(+480) 123 678 900</strong>
       </div>
 
-      <a href="#" class="btn">Get A Quote!</a>
+      <a href="/contact" class="btn">Get A Quote!</a>
 
     </div>
 
@@ -62,7 +62,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 </section>
 <!-- ================= WHO WE ARE ================= -->
 
-<section class="who-section">
+<section class="who-section" id="about">
 
   <div class="who-container">
 
@@ -231,7 +231,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <!-- ================= SERVICES INTERACTIVE ================= -->
 
-<section class="antra-services-interactive">
+<section class="antra-services-interactive" id="services">
 
   <div class="services-wrapper">
 
@@ -539,7 +539,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <!-- ================= PROJECTS SECTION ================= -->
 
-<section class="projects-section">
+<section class="projects-section" id="projects">
 
   <div class="projects-wrapper">
 
@@ -952,7 +952,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <!-- ================= BLOG SECTION ================= -->
 
-<section class="blog-section">
+<section class="blog-section" id="blog">
 
   <div class="blog-wrapper">
 

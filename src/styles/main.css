@@ -10,8 +10,9 @@
 }
 
 body {
-  background: #0f0f0f;
+  background: var(--bg-dark);
   color: #fff;
+  transition: var(--transition);
 }
 
 /* =========================
@@ -25,12 +26,19 @@ body {
 }
 
 .btn-primary {
-  background: #d2a75a;
+  background: var(--gold-base);
   border: none;
   padding: 10px 20px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: var(--gold-light);
+  box-shadow: 0 0 20px var(--gold-glow);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -40,6 +48,13 @@ body {
   padding: 12px 22px;
   border-radius: 30px;
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--gold-light);
+  color: var(--gold-light);
 }
 
 /* =========================
@@ -72,6 +87,11 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav a:hover {
+  color: var(--gold-base);
 }
 
 .header-actions {
@@ -111,9 +131,11 @@ body {
 
 .hero-tag {
   display: inline-block;
-  color: #d2a75a;
+  color: var(--gold-base);
   margin-bottom: 15px;
   font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .hero-text h1 {
@@ -139,7 +161,7 @@ body {
 
 .hero-card h2 {
   font-size: 48px;
-  color: #d2a75a;
+  color: var(--gold-base);
 }
 
 .card-title {

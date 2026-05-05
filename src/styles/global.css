@@ -22,11 +22,34 @@ body {
 /* ================= VARIABLES ================= */
 
 :root {
-  --gold: #d6b36a;
+  /* Brand Palette */
+  --gold-base: #d2a75a;
+  --gold-light: #e5c38a;
+  --gold-dark: #b38a41;
+  --gold-glow: rgba(210, 167, 90, 0.4);
+
+  /* Neutrals */
   --dark: #0e0f14;
   --light: #fafafa;
   --muted: #9ca0a8;
+  --text-dim: #aaa;
+  
+  /* Surfaces */
+  --bg-dark: #0f0f0f;
+  --bg-light: #fafafa;
+  --surface-dark: rgba(255, 255, 255, 0.08);
+  --surface-light: #ffffff;
+
+  /* Layout */
   --container: 1400px;
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* For backwards compatibility with existing code using --gold */
+:root {
+  --gold: var(--gold-base);
 }
 
 /* ================= UTILITIES ================= */
